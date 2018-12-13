@@ -1,5 +1,10 @@
 const nexteinConfig = require('nextein/config').default
+const { NOW, NOW_URL } = process.env
 
 module.exports = nexteinConfig({
-  assetPrefix: Boolean(process.env.NOW) ? process.env.NOW_URL : ''
+  assetPrefix: Boolean(NOW) ? NOW_URL : '',
+  exportPathMap: () => ({
+    '/blog': { page: '/blog' },
+    '/docs': { page: '/docs' }
+  })
 })
