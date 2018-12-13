@@ -1,17 +1,19 @@
-import withPosts, { inCategory } from 'nextein/posts'
+import { inCategory, withPostsFilterBy } from 'nextein/posts'
 import { Content } from 'nextein/post'
 import Link from 'nextein/link'
 import Layout from '../components/layout'
 
-export default withPosts(({ posts }) => {
-  const docs = posts.filter(inCategory('docs'))
+const fromDocs = withPostsFilterBy(inCategory('docs'), {
+  includeSubCategories: true
+})
 
+export default fromDocs(({ posts }) => {
   return (
     <Layout>
       <h1>Docs</h1>
 
       <ol>
-        {docs.map(doc => {
+        {posts.map(doc => {
           return (
             <li>
               <h2>
