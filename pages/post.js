@@ -1,6 +1,6 @@
 import React from 'react'
 import withPost, { Content } from 'nextein/post'
-import Link from 'next/link'
+import Link from 'nextein/link'
 import Layout from '../components/layout'
 
 export default withPost(({ post }) => {
