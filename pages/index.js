@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import Link from 'next/link'
 
 export default withPosts(({ posts }) => {
-  const blogs = posts.filter(inCategory('blog'))
+  const blogs = posts.filter(inCategory('blog')).reverse()
   const docs = posts.filter(inCategory('docs'))
 
   return (

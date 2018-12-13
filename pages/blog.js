@@ -4,7 +4,7 @@ import Link from 'nextein/link'
 import Layout from '../components/layout'
 
 export default withPosts(({ posts }) => {
-  const blogs = posts.filter(inCategory('blog'))
+  const blogs = posts.filter(inCategory('blog')).reverse()
 
   return (
     <Layout>
