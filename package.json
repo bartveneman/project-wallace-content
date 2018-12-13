@@ -1,0 +1,51 @@
+{
+  "name": "project-wallace-content",
+  "version": "0.1.0",
+  "description": "Content pages for projectwallace.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "xo",
+    "dev": "nextein",
+    "export": "nextein build && nextein export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bartveneman/project-wallace-content.git"
+  },
+  "keywords": [
+    "projectwallace",
+    "cssstats",
+    "analysis",
+    "content",
+    "next",
+    "nextein",
+    "css",
+    "analysis",
+    "blog"
+  ],
+  "author": "Bart Veneman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bartveneman/project-wallace-content/issues"
+  },
+  "homepage": "https://github.com/bartveneman/project-wallace-content#readme",
+  "dependencies": {
+    "next": "^7.0.2",
+    "nextein": "^2.1.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "now": "^12.1.12",
+    "prettier": "^1.15.3",
+    "xo": "^0.23.0"
+  },
+  "xo": {
+    "semicolon": false,
+    "prettier": true
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
