@@ -1,5 +1,6 @@
 ---
 title: How font-sizes are analyzed
+page: doc
 ---
 
 Finding font-sizes in some CSS can be done in 2 ways:

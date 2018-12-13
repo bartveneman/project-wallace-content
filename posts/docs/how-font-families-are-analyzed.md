@@ -1,5 +1,6 @@
 ---
 title: How font-families are analyzed
+page: doc
 ---
 
 Finding font-families in some CSS can be done in 2 ways:

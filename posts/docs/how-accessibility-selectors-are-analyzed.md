@@ -1,5 +1,6 @@
 ---
 title: How accessibility selectors are analyzed
+page: doc
 ---
 
 There are two different ways that we currently mark a selector as being accessibility related:

@@ -1,5 +1,6 @@
 ---
 title: How CSS colors are analyzed
+page: doc
 ---
 
 Colors can appear in many places and in many forms in CSS.
